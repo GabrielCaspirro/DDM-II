@@ -1,0 +1,105 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('img/back.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 40%;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.2); /* Fundo translúcido */
+    backdrop-filter: blur(15px); /* Aumenta o efeito de desfoque */
+    padding: 30px;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s; /* Efeito de transição */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+h1 {
+    text-align: center;
+    color: #00796b; /* Um verde-água suave */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #004d40; /* Um verde escuro */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 24px); /* Ajusta a largura para incluir padding */
+    padding: 12px;
+    border: 1px solid rgba(178, 223, 219, 0.5); /* Borda suave e translúcida */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: border-color 0.3s; /* Efeito de transição */
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #00796b; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+textarea {
+    height: 150px; /* Altura fixa para a área de texto */
+    resize: none; /* Impede o redimensionamento */
+}
+
+button {
+    background-color: #00796b; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+button:hover {
+    background-color: #004d40; /* Cor do botão ao passar o mouse */
+}
+
+/* Adicione isso ao seu style.css */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #00796b; /* Cor de fundo do cabeçalho */
+    color: white;
+}
+
+a {
+    color: #00796b; /* Cor dos links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+}
